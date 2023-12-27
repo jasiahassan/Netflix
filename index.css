@@ -1,0 +1,566 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+.modal-open {
+    overflow: hidden; 
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(3px);
+    z-index: 1;
+}
+
+
+.model{
+    background-color: rgba(0,0,0,.9);
+    position: absolute;
+    top: 4%;
+    left: 0;
+    border-radius: 0.4rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin:0 25rem ;
+    min-height: 515px;
+    padding: 4rem;
+    color: white;
+    flex-grow: 1;
+    z-index: 2;
+}
+.hide{
+    display: none;
+}
+.modalhide{
+    display: none;
+}
+
+.main {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.8) 100%), url(assets/n1.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.head {
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+}
+
+.logo {
+    width: 50%;
+}
+
+.head2 {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    height: 2.1rem;
+
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.select1 {
+    display: flex;
+    position: relative;
+    width: auto;
+}
+
+.select2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 0.3rem 1.5rem;
+    margin-right: 1rem;
+    width: auto;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.img2 {
+    position: absolute;
+    top: 0.4rem;
+    right: auto;
+    left: 2px;
+    margin-left: 0.3rem;
+}
+.options{
+    background-color: white;
+    color: black;
+}
+
+.b2 {
+    background-color: rgb(207, 17, 17);
+    height: 100%;
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1.5 rem;
+    font-weight: 550;
+    padding: 0 ;
+    min-width: 6rem;
+    cursor: pointer;
+}
+
+.f1 {
+    padding: 9rem 2rem;
+    text-align: center;
+    color: white;
+}
+
+.font1 {
+    font-size: 3rem;
+    font-weight: 800;
+    padding: 0;
+    margin: 0;
+}
+
+.font2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+
+.font3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.wrap1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.5rem
+}
+.i1 {
+    padding: 1rem 1rem;
+    margin-right: 0.5rem;
+    border: 0;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0.3rem;
+    width: 35%;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 1rem;
+}
+
+.b1 {
+    background-color: rgb(207, 17, 17);
+    border-radius: 0.3rem;
+    width: auto;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    padding: 0.8rem ;
+    cursor: pointer;
+}
+
+.arrowlogo {
+    display: flex;
+    padding-left: 1rem;
+}
+.border{
+    width: 100%;
+    height: 0.5rem;
+    display: block;
+    background-color: rgb(35,35,35);
+    border: none;
+}
+.section2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255,255,255);
+    text-align: center;
+    height: 100%;
+    box-sizing: border-box;
+    height: auto;
+    padding: 3.5rem 0;
+    background-color: black;
+    /* z-index: -2; */
+    overflow: hidden;
+}
+.content1,.content2{
+    display: flex;
+    margin: 0 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.side1{
+    width:50%;
+    text-align: left;
+    overflow: hidden;
+}
+.side2{
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    /* padding-left: 1rem; */
+}
+.sideeleven{
+    overflow: hidden;
+    width: 50%;
+    position: relative;
+}
+.tv,.eleven{
+    width: 100%;
+    position:relative;
+    overflow: hidden;
+    z-index: 2;
+}
+.eleven{
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+.video1{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100;
+    top: 20%;
+    overflow: hidden;
+    max-width: 73%;
+    max-height: 54%;
+    left: 13%;
+}
+.containerstr{
+    display: flex;
+    z-index: 2;
+    border: 2px solid rgba(128,128,128,0.7);
+    box-shadow: 0 0 2em 0 rgb(0,0,0);
+    position: absolute;
+    overflow: hidden;
+    padding: 0.4rem 0.5rem ;
+    border-radius: 0.75rem;
+    bottom: 10%;
+    left:18%;
+    background: rgb(0,0,0);
+    margin: 0 auto;
+    justify-content:space-between;
+    align-items: center;
+    width: 60%;
+    min-width: 15rem;
+    
+}
+.str{
+    margin: 0 -2rem 0 -2.7rem;
+}
+.strimg{
+    width: 37%;
+    height: auto;
+}
+.strdiv{
+    width: 65%;
+    text-align: left;
+}
+.clip{
+    width: 3rem;
+    height: 3rem;
+    outline: 2px solid rgb(0,0,0);
+    display: block;
+    background: url(assets/download-icon.gif) center center no-repeat;
+    background-size: 100%;
+    padding-right: 1rem;
+}
+.video2{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100;
+    top: 7%;
+    overflow: hidden;
+    max-width: 61%;
+    max-height: 48%;
+    left: 19%;
+}
+.listcontainer{
+   margin-top: 1.5rem;
+}
+.outerdiv{
+    display: flex;
+    margin: 1rem 2.2rem;
+    width: 100%;
+}
+.contentlist{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.listcontainer2{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 3rem;
+    font-weight: 400;
+    width: 100%;
+}
+.listitem{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+    margin: 0 0 0.5rem 0;
+}
+
+.innerbtn{
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 1.5rem;
+    position: relative;
+    background-color: rgb(45,45,45);
+    color: rgb(255,255,255);
+    border-top: 1px solid black;
+    justify-content:space-between;
+    text-align:left ;
+    transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1) 0s;
+}
+.btn{
+    display: flex;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 1.5rem;
+    position: relative;
+    background-color: rgb(45,45,45);
+    color: rgb(255,255,255);
+    border: none;
+    justify-content:space-between;
+    text-align:left ;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(63, 62, 62);
+}
+.footer{
+    padding: 4.5rem 2.2rem;
+    background-color: black;
+    
+}
+.wrap2{
+    display: inline-flex;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.669);
+    flex-direction: column;
+    justify-content: end;
+
+}
+.lastul{
+    padding: 0;
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0 0 2rem 0;
+
+}
+.plusrotate{
+    rotate: 45deg;
+}
+.links{
+    list-style: none;
+    width: 25%;
+    margin: 0.9rem 0 0 0;
+}
+a{
+    color: rgba(255, 255, 255, 0.669);
+    font-size: 0.9rem;
+}
+.lastdiv{
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+}
+
+
+.signemail{
+    padding: 1rem 1rem;
+    border: 0;
+    color: white;
+    border-radius: 0.3rem;
+    width: 100%;
+    background-color: rgba(45,45,45);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    box-sizing: border-box;
+}
+.signbutton{
+    padding: 1rem 1rem;
+    border: 0;
+    color: white;
+    border-radius: 0.3rem;
+    width: 100%;
+    background-color: rgb(207, 17, 17);
+    font-size: 1rem;
+    margin: 1.4rem 0 0.6rem 0;
+    border: none;
+    box-sizing: border-box;
+}
+.remember{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.rememberfont{
+    color:rgba(255, 255, 255, 0.669); 
+    font-size: 0.8rem; ;
+}
+.flexgr{
+    margin-bottom: 4rem;
+}
+
+
+
+@media screen and (max-width:960px){
+    .font1{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .b2{
+        min-width: 4rem;
+    }
+    .font2{
+        font-size: 1.125rem;
+    }
+    .font3{
+        font-size: 1.125rem;
+    }
+    .netflix{
+        padding-top: 0.4rem;
+        width: 5.5rem;
+        height: auto;
+    }
+    .f1{
+        padding: 6rem 2rem;
+    }
+    .section2{
+        justify-content: center;
+    }
+   .content1{
+        flex-direction: column;
+   }
+   .content2{
+        flex-direction: column-reverse;
+   }
+   .side1{
+        width:100%;
+        text-align: center;
+    }
+    .side2{
+        width: 100%;
+    }
+    .tv{
+        width: 92%;
+        height: auto;
+    }
+    .sideeleven{
+        width: 100%;
+        position: static;
+    }
+    .containerstr{
+        width: 43%;
+        bottom:15%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .strimg{
+        width: 28%;
+    }
+    .strdiv{
+        text-align: left;
+    }
+    .btn,.innerbtn{
+        font-size: 1.1rem;
+    }
+    .plus{
+        width: 1.5rem;
+    }
+    .links{
+        width: 50%;
+    }
+    .footer{
+        padding: 2rem 2.2rem;
+    }
+}
+@media screen and (max-width:600px) {
+    .wrap1 {
+        flex-direction: column;
+        height: auto;
+      
+    }
+    .i1 {
+        width:80%;
+        padding: 1rem 1rem;
+        margin: 0;;
+    }
+    .b1 {
+        font-size: 1.1rem;
+        font-weight: 550;
+        padding: 0.8rem 0.5rem;
+        margin: 1rem;
+        align-items: center;
+}
+    .containerstr{
+        bottom: 9%;
+    }
+    .strimg{
+        width: 25%;
+    }
+}
+@media screen and (max-width:380px) {
+    .head{
+        flex-direction: column;
+        padding: 1rem;
+        overflow: hidden;
+    }
+    .head2 {
+        justify-content: flex-start;
+    
+    }
+
+}
+@media screen and (min-width: 1280px){
+    .head,.f1,.content1,.content2,.contentlist,.wrap2{
+        max-width: calc(83.33333333333334% - 6rem);
+    }
+    .outerdiv{
+        margin: 0;
+    }
+    
+}
+@media screen and (min-width: 1920px){
+    .head,.f1,.content1,.content2,.contentlist,.wrap2{
+        max-width: 1440px;
+    }
+    .outerdiv{
+        margin: 0;
+    }
+    
+}
+
+
+
+
+
+
+
